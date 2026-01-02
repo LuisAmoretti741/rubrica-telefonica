@@ -1,0 +1,25 @@
+@import url('./shared/style.css');
+
+.todo-card{
+    margin-bottom: 4px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.color-and-title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.actions-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page{
+    justify-content: space-between;
+}

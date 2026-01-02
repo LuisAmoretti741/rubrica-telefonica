@@ -1,0 +1,11 @@
+@import url('../shared/style.css');
+
+.detail-info{
+    font-size: x-large;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
