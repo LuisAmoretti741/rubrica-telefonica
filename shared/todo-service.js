@@ -55,3 +55,15 @@ export function postTodo(todo) {
     .then(result => result)
     .catch(error => console.error('Error:', error));
 }
+
+export function updateContact(id, updatedContact) {
+    const apiUrl = baseUrl + "/" + id;
+
+    return fetch(apiUrl, {
+        method: "PATCH",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(updatedContact)
+    }).then(res => res.json())
+    .then(result => result)
+    .catch(error => console.error('Error:', error));
+}

@@ -52,6 +52,24 @@ function displayTodos(todos){
 
         todosContainer.appendChild(card);
     }
+
+    function searchTodos(text) {
+    const searchText = text.toLowerCase();
+
+    const filteredTodos = todos.filter(todo =>
+        todo.name.toLowerCase().includes(searchText) ||
+        todo.lastname.toLowerCase().includes(searchText)
+    );
+
+    displayTodos(filteredTodos);
+    }
+
+    document.getElementById("search-contact")
+    .addEventListener("input", (event) => {
+        searchTodos(event.target.value);
+    });
+
+
 }
 
 function orderByName() {
